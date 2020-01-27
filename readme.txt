@@ -6,7 +6,7 @@ The files in this program consist of:
   Client/Server:
     - client.py handles the user interaction with the program.
     - server.py handles the server logic of handling client data such as passwords and accounts.
-  Password Locker:
+  Locker:
     - CreateAccount.py handles creating user accounts and storing them in a text file.
     - Login.py will read from text file to verify user account and password.
     - PasswordHandler.py will check passwords to see if they meet the requirements.
