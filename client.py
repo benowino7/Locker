@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     while True:
         response = checkVerification(server, PLdecrypt(server.recv(1024), serverkey, aeskey))
-        if response == "Goodbye":
+        if response == "see you when you see me":
             server.shutdown(socket.SHUT_RDWR)
             server.close()
             sys.exit()

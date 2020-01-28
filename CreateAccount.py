@@ -68,7 +68,7 @@ def create_account(client, key, clientkey, aeskey):
     directory = username
     if not os.path.exists(directory): #creates a directory named after the user that will act as the storage location for their passwords
         os.makedirs(directory)
-    # save username, hashed password, and salt in login file (all encrypted in AES-256 CBC mode
+    # save username, hashed password, and salt in login file (all encrypted in AES-256 CBC mode)
     with open(file_name, "a") as f:
         writer = csv.writer(f)
         writer.writerow([aesencrypt(username, enckey(), gen_iv()), aesencrypt(psHash.hexdigest(), enckey(), gen_iv()), aesencrypt(psSalt.encode('base-64'), enckey(), gen_iv())])
