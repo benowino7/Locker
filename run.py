@@ -45,8 +45,8 @@ def main():
     while True:
         print("Welcome to PassWord Locker.")
         print('\n')
-        print("Use these short codes to select an option: Create New User use 'c': Login to your account use 'log_in' or 'x' to exit password locker")
-        short_code = input().lower()
+        print("Use these short codes to select an option: Create New User use 'c': Login to your account use 'l' or 'x' to exit password locker")
+        short_code = input()
         print('\n')
 
         if short_code == 'c':
@@ -207,7 +207,7 @@ def main():
                         print("Please enter a valid code")
                         continue
 
-        elif short_code == 'log_in':
+        elif short_code == 'l':
             print("WELCOME")
             print("Enter UserName")
             default_user_name = input()
