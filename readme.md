@@ -9,7 +9,7 @@ This project was generated with ```Python3.6.```
 * From the terminal navigate to the cloned project folder.
 * Run ```python3.6 run.py``` code in the terminal to launch.
 
-# Usage
+## Usage
 
 * launch and you can either create a new user, or login or exit the application.
 * If you choose option ```(l),``` use: ```testuser``` as username and ```345678``` as PassWord
@@ -26,7 +26,7 @@ if you log in
 * Run ```python3.6 credentials_test.py``` >>> credential  tests.
 * Run ```python3.6 test_user.py``` >>> user  tests.
 
-# Bugs.
+## Bugs.
 
 Since there is no database to support the app, once you exit or log out of a session you loose all the credentials and created user. You have to create a new user for every session.
 You can still use the default login but if you exit the app, you will still loose all the credentials you created.
@@ -47,6 +47,6 @@ firs fork , git clone the cloned repo to your machine, contribute the pull reque
 For additions, submit a pull request and once approved you can make contributions at will.
 Alternatively contact me at: ```bensonowino7@gmail.com```
 
-# License
+## License
 
 MIT License(https://choosealicense.com/licenses/mit/)
