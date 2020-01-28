@@ -45,7 +45,7 @@ def main():
     while True:
         print("Welcome to PassWord Locker.")
         print('\n')
-        print("Use these short codes to select an option: Create New User use 'c': Login to your account use 'l' or 'x' to exit password locker")
+        print("Use these short codes to select an option: \n 1. Create New User use: c \n 2. Login to your account use: l \n 3. Exit password locker use: x")
         short_code = input()
         print('\n')
 
@@ -66,7 +66,7 @@ def main():
                 print("Confirm Your Password")
                 confirm_password = input()
             else:
-                print("Congratulations {created_user_name}! You have created your new account.")
+                print(f"Congratulations {created_user_name}! You have created your new account.")
                 print('\n')
                 print("Proceed to Log In to your Account")
                 print("Username")
@@ -81,7 +81,7 @@ def main():
                     print("Your Password")
                     entered_password = input()
                 else:
-                    print("Welcome: {entered_userName} to your Account")
+                    print(f"Welcome: {entered_userName} to your Account")
                     print('\n')
 
                     print("Select an option below to continue: Enter 1, 2, 3, 4 or 5")
@@ -109,14 +109,14 @@ def main():
                                 keyword = input().lower()
                                 if keyword == 'gp':
                                     account_password = random.randint(111111, 1111111)
-                                    print("Account: {account_name}")
-                                    print("Password: {account_password}")
+                                    print(f"Account: {account_name}")
+                                    print(f"Password: {account_password}")
                                     print('\n')
                                 elif keyword == 'n':
                                     print("Create your password")
                                     account_password = input()
-                                    print("Account: {account_name}")
-                                    print("Password: {account_password}")
+                                    print(f"Account: {account_name}")
+                                    print(f"Password: {account_password}")
                                     print('\n')
 
                                 else:
@@ -134,8 +134,8 @@ def main():
                             if display_credentials():
 
                                 for credential in display_credentials():
-                                    print("ACCOUNT NAME:{credential.account_name}")
-                                    print("PASSWORD:{credential.account_password}")
+                                    print(f"ACCOUNT NAME:{credential.account_name}")
+                                    print(f"PASSWORD:{credential.account_password}")
 
                             else:
                                 print('\n')
@@ -170,7 +170,7 @@ def main():
 
                             if check_existing_credentials(search_name):
                                 search_credential = find_credential(search_name)
-                                print("ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
+                                print(f"ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
                                 print("Delete? y/n")
                                 sure = input().lower()
                                 if sure == 'y':
@@ -195,7 +195,7 @@ def main():
 
                                 if check_existing_credentials(search_name):
                                     search_credential = find_credential(search_name)
-                                    print("ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
+                                    print(f"ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
                                 else:
                                     print("That Contact Does not exist")
                             elif option2 == 'n':
@@ -254,14 +254,14 @@ def main():
                             keyword = input().lower()
                             if keyword == 'gp':
                                 account_password = random.randint(111111, 1111111)
-                                print("Account: {account_name}")
-                                print("Password: {account_password}")
+                                print(f"Account: {account_name}")
+                                print(f"Password: {account_password}")
                                 print('\n')
                             elif keyword == 'n':
                                 print("Create your password")
                                 account_password = input()
-                                print("Account: {account_name}")
-                                print("Password: {account_password}")
+                                print(f"Account: {account_name}")
+                                print(f"Password: {account_password}")
                                 print('\n')
 
                             else:
@@ -279,8 +279,8 @@ def main():
                         if display_credentials():
 
                             for credential in display_credentials():
-                                print("ACCOUNT NAME:{credential.account_name}")
-                                print("PASSWORD:{credential.account_password}")
+                                print(f"ACCOUNT NAME:{credential.account_name}")
+                                print(f"PASSWORD:{credential.account_password}")
 
                         else:
                             print('\n')
@@ -318,7 +318,7 @@ def main():
 
                         if check_existing_credentials(search_name):
                             search_credential = find_credential(search_name)
-                            print("ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
+                            print(f"ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
                             print("Delete? y/n")
                             sure = input().lower()
                             if sure == 'y':
@@ -343,7 +343,7 @@ def main():
 
                             if check_existing_credentials(search_name):
                                 search_credential = find_credential(search_name)
-                                print("ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
+                                print(f"ACCOUNT NAME: {search_credential.account_name} \n PASSWORD: {search_credential.account_password}")
                             else:
                                 print("That Contact Does not exist")
                         elif option2 == 'n':
