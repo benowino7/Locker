@@ -7,7 +7,7 @@ class User:
     user_list = []
 
     def save_user(self):
-        """Method that saves user objects into user_list"""
+        """saves user objects into user_list"""
         self.user_list.append(self)
 
 

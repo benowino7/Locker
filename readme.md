@@ -44,8 +44,8 @@ firs fork , git clone the cloned repo to your machine, contribute the pull reque
 ```
 
 ## Further help
-For additions, submit a pull request and once approved you can make contributions at will.
-Alternatively contact me at: ```bensonowino7@gmail.com```
+For additions, submit a pull request and you can make contributions at will.
+Alternatively reach me through: ```bensonowino7@gmail.com```
 
 ## License
 
