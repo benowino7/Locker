@@ -1,5 +1,5 @@
 class Credentials:
-    """Create class for credentials"""
+    """Create credentials  class"""
 
     def __init__(self, account_name, account_password):
         self.account_name = account_name
@@ -8,20 +8,18 @@ class Credentials:
     credentials_list = []
 
     def save_credentials(self):
-        """Method that saves credential objects into credentials_list"""
+        """saves credential objects to credentials_list"""
         self.credentials_list.append(self)
 
     def delete_credential(self):
-        """Method which deletes a particular credential"""
+        """deleting a particular credential"""
         Credentials.credentials_list.remove(self)
 
     @classmethod
     def find_by_name(cls, account_name):
-        """Method that takes in a name and returns a credential that matches that particular name
-        Args:
-            name: account_name that has a password
-        Returns:
-            The account_name and it's corresponding PassWord
+        """receiving  in a name and returning a credential that matches that particular name
+        Arguments: name: acct_name that has a password
+        Returns: The acct_name and it's corresponding PassWord
         """
 
         for credential in cls.credentials_list:
@@ -30,9 +28,9 @@ class Credentials:
 
     @classmethod
     def credential_exists(cls, name):
-        """Method to check whether a credential exists
-        Args:
-        name: name of account to search whether it exists
+        """ check if a credential exists
+        Arguments:
+        name: name of acct to search if it exists
         boolean: True or False depending if the contatc exists
         """
 
@@ -43,5 +41,5 @@ class Credentials:
 
     @classmethod
     def display_credentials(cls):
-        """Method which displays all current credentials"""
+        """displays all recent credentials"""
         return cls.credentials_list
